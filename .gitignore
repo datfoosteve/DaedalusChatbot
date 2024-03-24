@@ -1,38 +1,79 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Dependencies
 node_modules
-.pnp
-.pnp.js
+jspm_packages/
+bower_components
+web_modules/
 
-# testing
-coverage
-
-# next.js
+# Build and output directories
 .next/
 out/
-build
+build/
+dist/
+.nuxt/
+.cache/
+.parcel-cache/
+.vuepress/dist/
+.docusaurus/
+.serverless/
+.fusebox/
 
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
+# Local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env*.local
 
-# turbo
-.turbo
+# Logs and diagnostic reports
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# Misc
+.DS_Store
+*.pem
 .env
 .vercel
 .vscode
-.env*.local
+.turbo
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# Compiled binary addons
+build/Release/
+
+# Others
+.grunt
+.lock-wscript
+*.lcov
+*.pid
+*.pid.lock
+*.seed
+*.tsbuildinfo
+.eslintcache
+.npm
+.node_repl_history
+*.tgz
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.stylelintcache
